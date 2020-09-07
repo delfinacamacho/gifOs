@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+
+    <!--Google fonts library-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>GifOs</title>
+</head>
+
+<body id="theme" class="day">
+    
+    <header class="header">
+        <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h1>
+    </header>
+
+    <nav class="container nav-bar">
+        <div onclick="location.href='index.html'" class="logo"></div>
+
+        <div class="menu">
+            <button onclick="location.href='upload.html'" class="btn-menu">Crear Guifos</button>
+            
+            <div class="theme-hover">
+                <button class="btn-menu" onclick="showThemeDropdown()">Elegir tema</button><!-- 
+             --><div id="btn-dropdown" class="btn-dropdown">
+                    <img class="dropdown-icon" src="/assets/dropdown.svg" alt=""> 
+                    <ul id="themeDropdown" class="dropdown-content display-none">
+                        <li id="day-theme-btn" class="btn-dropdown-active-theme"><span class="underline">S</span>ailor Day</li>
+                        <li id="night-theme-btn" class="selector"><span class="underline">S</span>ailor Night</li>       
+                    </ul>
+                </div>
+            </div>
+            
+            <a class="my-gifos" href="misGifos.html"><span class="underline">M</span>is Gifos</a>
+        </div>    
+    </nav>
+
+    <main class="container">
+
+        <section class="search-section">
+            <div class="search-bar">
+                <h2 class="window-header">Buscar</h2>
+                
+                <div id="search-bar-form" class="search-bar-form">
+                    <input type="text" id="search-input" aria-label="Barra de búsqueda para gifs" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete="off"/>
+                    <button id="submit-btn" class="search-btn-submit">Buscar</button>
+                </div>
+
+                <div class="search-bar-suggestions hidden">
+                    <button class="suggestions-btn"></button>
+                    <button class="suggestions-btn"></button>
+                    <button class="suggestions-btn"></button>
+                </div>       
+
+            </div>
+
+        </section>
+
+        <section class="suggestions-section">
+            <h2 class="section-header">Hoy te sugerimos:</h2>
+
+            <div id="suggestions-container" class="suggestions-container">
+
+            <!--Elemento
+                <div class="suggestions-gif">
+                    <div class="gif-header">
+                        <h2>placeholderddddddddddddddddddddddddddddddddddddddddddddd</h2>
+                        <span class="close-btn"></span>
+                    </div>
+                    <img src="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="suggestions-content">
+
+                    <button class="gif-btn-more">Ver más...</button>
+                </div>
+
+                <div class="suggestions-gif">
+                    <div class="gif-header">
+                        <h2>placeholder</h2>
+                        <span class="close-btn"></span>
+                    </div>
+                    <div class="suggestions-content">
+
+                        <button class="gif-btn-more">Ver más...</button>
+                    </div>
+                </div>
+
+                <div class="suggestions-gif">
+                    <div class="gif-header">
+                        <h2>placeholder</h2>
+                        <span class="close-btn"></span>
+                    </div>
+                    <div class="suggestions-content">
+
+                        <button class="gif-btn-more">Ver más...</button>
+                    </div>
+                </div>
+
+                <div class="suggestions-gif">
+                    <div class="gif-header">
+                        <h2>placeholder</h2>
+                        <span class="close-btn"></span>
+                    </div>
+                    <div class="suggestions-content">
+
+                        <button class="gif-btn-more">Ver más...</button>
+                    </div>
+                </div>-->
+                
+            </div>
+        </section>
+
+        <section class="trends-section">
+            <h2 class="section-header">Tendencias:</h2>
+
+            <div id="trends-container" class="trends-container">
+
+                <!--Elemento
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="trends-content">
+                    <div class="gif-footer">placeholder</div>
+                </div>-->
+                    
+            </div>
+        </section>
+
+        <section class="results-section display-none">
+
+        <div class="results-examples-container">
+            <div class="results-examples-btn">placeholder</div>
+            <div class="results-examples-btn">placeholder</div>
+            <div class="results-examples-btn">placeholder</div>
+        </div>
+
+        <h2 class="section-header">Resultados para: <span class="search-term">placeholder</span></h2>
+
+        <div id="results-container" class="results-container"> <!-- div to be called with getElementById in main.js -->
+
+                <!--Elemento 1
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="results-content">
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="results-content">
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="results-content">
+                </div>
+
+                <div class="gif-frame">
+                    <img href="https://www.hongliyangzhi.com/manufacturers/bmw/bmw-coupe/bmw-coupe-i8/bmw-coupe-i8-7.jpg" class="results-content">
+                </div>-->
+                    
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js">
+
+
+    </script>
+
+
+</body>
+</html>
