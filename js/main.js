@@ -128,7 +128,6 @@ async function getTrending() {
       gifFooter.classList.add("gif-footer");
       let titleToArray = item.title.split(" ");
       let arrayDirty = titleToArray.slice(0,3);
-      console.log(titleToArray);
       let titleArrayToTags = "";
       arrayDirty.forEach(word => {
         titleArrayToTags += `#${word} `;
@@ -173,57 +172,56 @@ async function searchGifs() {
         const resultsContainer = document.getElementById("results-container");
         resultsContainer.innerHTML = "";
         let searchTerm = searchInput.value;
-        let path = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${searchTerm}`;
-        const loadResults = await fetch(path).then((Response) => Response.json());
+        if (searchTerm) {
+          let path = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${searchTerm}`;
+          const loadResults = await fetch(path).then((Response) => Response.json());
+          loadResults.data.forEach((item) => {
+            let height = item.images.downsized_large.height;
+            let width = item.images.downsized_large.width;
+            let aspectRatio = height / width;
+            
+            const resultsGifs = document.createElement("div");
+            resultsGifs.classList.add("gif-frame");
 
-        loadResults.data.forEach((item) => {
-        let height = item.images.downsized_large.height;
-        let width = item.images.downsized_large.width;
-        let aspectRatio = height / width;
+            const gifContent = document.createElement("img");
+            gifContent.src = item.images.downsized_large.url;
+            gifContent.classList.add("results-content");
+
+            const gifFooter = document.createElement("div");
+            gifFooter.classList.add("gif-footer");
+            let titleToArray = item.title.split(" ");
+            let arrayDirty = titleToArray.slice(0,3);
+            let titleArrayToTags = "";
+            arrayDirty.forEach(word => {
+              titleArrayToTags += `#${word} `;
+            });
+            gifFooter.innerText = titleArrayToTags; 
+
+            resultsGifs.addEventListener("mouseover", function () {
+              gifFooter.setAttribute("style", "visibility: visible");
+            });
+            resultsGifs.addEventListener("mouseout", function () {
+              gifFooter.setAttribute("style", "visibility: hidden");
+          });
+
+            resultsGifs.appendChild(gifContent);
+            resultsGifs.appendChild(gifFooter);
+            resultsContainer.appendChild(resultsGifs);
+
+            if (aspectRatio < 0.6) {
+                resultsContainer.lastElementChild.classList.add("double-span"); //To apply a double span width in the grid to gifs with a 16:9 aspect ratio (9/16=0.56)
+              }
+            });
+          document.querySelector(".suggestions-section").classList.add("display-none");
+          document.querySelector(".trends-section").classList.add("display-none");
+          document.querySelector(".results-section").classList.remove("display-none");
         
-        const resultsGifs = document.createElement("div");
-        resultsGifs.classList.add("gif-frame");
-
-        const gifContent = document.createElement("img");
-        gifContent.src = item.images.downsized_large.url;
-        gifContent.classList.add("results-content");
-
-        const gifFooter = document.createElement("div");
-        gifFooter.classList.add("gif-footer");
-        let titleToArray = item.title.split(" ");
-        let arrayDirty = titleToArray.slice(0,3);
-        console.log(titleToArray);
-        let titleArrayToTags = "";
-        arrayDirty.forEach(word => {
-          titleArrayToTags += `#${word} `;
-        });
-        gifFooter.innerText = titleArrayToTags; //TODO!!! Quitar desde GIF en adelante
-
-        resultsGifs.addEventListener("mouseover", function () {
-          gifFooter.setAttribute("style", "visibility: visible");
-        });
-        resultsGifs.addEventListener("mouseout", function () {
-          gifFooter.setAttribute("style", "visibility: hidden");
-        });
-
-        resultsGifs.appendChild(gifContent);
-        resultsGifs.appendChild(gifFooter);
-        resultsContainer.appendChild(resultsGifs);
-
-        if (aspectRatio < 0.6) {
-            resultsContainer.lastElementChild.classList.add("double-span"); //To apply a double span width in the grid to gifs with a 16:9 aspect ratio (9/16=0.56)
-          }
-        });
-
-  document.querySelector(".suggestions-section").classList.add("display-none");
-  document.querySelector(".trends-section").classList.add("display-none");
-  document.querySelector(".results-section").classList.remove("display-none");
-
-  const searchDropdown = document.querySelector(".search-bar-suggestions");
-  searchDropdown.classList.add("hidden");
-  submitButton.classList.add("search-btn-active");
-
-  sectionPlaceholder.innerText = searchTerm;
+          const searchDropdown = document.querySelector(".search-bar-suggestions");
+          searchDropdown.classList.add("hidden");
+          submitButton.classList.add("search-btn-active");
+        
+          sectionPlaceholder.value = searchTerm;
+        }
 
 } catch (error) {
     console.log("failed", error);
@@ -273,7 +271,7 @@ document.getElementsByClassName("suggestions-btn")[1].addEventListener("click", 
 document.getElementsByClassName("suggestions-btn")[2].addEventListener("click", suggSearch);
 
 function suggSearch() {
-  let searchTerm = this.innerText.replace('#', '');
+  let searchTerm = this.innerText.replace('#','');
   searchInput.value = searchTerm;
   searchGifs();
 }
