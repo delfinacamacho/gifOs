@@ -226,20 +226,22 @@ nav {
 
 .search-btn-submit {
   height: 36px;
-  padding: 0 14px 0 36px;
-  background: url(/gifOs/assets/lupa_inactive.svg) no-repeat 10px 10px;
-  background-size: 16px auto;
+  width: 102px;
+  line-height: 14px;
   margin-right: 18px;
+  padding: 10px 14px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
 }
 
-.search-btn-listener, .search-btn-active {
-  height: 36px;
-  padding: 0 14px 0 36px;
-  background: url(/gifOs/assets/lupa.svg) no-repeat 10px 10px;
-  background-size: 16px auto;
-  margin-right: 18px;
-  cursor: pointer;
+.search-btn-submit img {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+  -webkit-filter: invert(70%);
+          filter: invert(70%);
 }
 
 .search-bar-suggestions {
@@ -321,7 +323,7 @@ nav {
   display: inline-block;
   width: 16px;
   height: 14px;
-  background: url(/gifOs/assets/button_close.svg) no-repeat center;
+  background: url(./assets/button_close.svg) no-repeat center;
   margin-right: 4px;
 }
 
@@ -569,7 +571,7 @@ nav {
   width: 36px;
   padding: 8px;
   cursor: pointer;
-  background: url(/gifOs/assets/recording.svg) no-repeat center;
+  background: url(./assets/recording.svg) no-repeat center;
   background-size: 18px 18px;
 }
 
@@ -579,7 +581,7 @@ nav {
   width: 36px;
   padding: 8px;
   cursor: pointer;
-  background: url(/gifOs/assets/camera.svg) no-repeat center;
+  background: url(./assets/camera.svg) no-repeat center;
   background-size: 18px 18px;
 }
 
@@ -628,7 +630,7 @@ nav {
   width: 22px;
   cursor: pointer;
   margin-right: 4px;
-  background: url(/gifOs/assets/forward.svg) no-repeat center;
+  background: url(./assets/forward.svg) no-repeat center;
   background-size: 10px 10px;
 }
 
@@ -762,7 +764,7 @@ nav {
 }
 
 .day .logo {
-  background: url(/gifOs/assets/gifos_logo.png) no-repeat center;
+  background: url(/assets/gifos_logo.png) no-repeat center;
 }
 
 .day .menu {
@@ -774,10 +776,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -815,20 +815,16 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   border-width: 1px 1px 1px 0;
 }
 
 .day .dropdown-content {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .dropdown-content .selector {
@@ -836,10 +832,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -848,10 +842,8 @@ nav {
   border-style: solid;
   border-color: #CCA6C9;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .day .dropdown-content .selector:hover .underline {
@@ -863,10 +855,8 @@ nav {
   border-style: solid;
   border-color: #CCA6C9;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .day .btn-dropdown-active-theme .underline {
@@ -891,10 +881,8 @@ nav {
 
 .day .search-bar {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .search-bar-form input {
@@ -902,10 +890,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -920,10 +906,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   color: #B4B4B4;
   background-color: #E6E6E6;
@@ -934,11 +918,14 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
+}
+
+.day .search-btn-listener img {
+  -webkit-filter: invert(0);
+          filter: invert(0);
 }
 
 .day .search-btn-active {
@@ -946,10 +933,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -960,18 +945,14 @@ nav {
   border-style: solid;
   border-color: #E6BBE2;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #80687D;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #80687D;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 }
 
 .day .search-bar-suggestions {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .suggestions-btn {
@@ -979,10 +960,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -991,10 +970,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -1002,10 +979,8 @@ nav {
 
 .day .suggestions-gif {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .gif-header {
@@ -1019,10 +994,8 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1034,10 +1007,8 @@ nav {
 
 .day .gif-frame:hover {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
   outline-offset: -4px;
 }
@@ -1058,27 +1029,21 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
 .day .create-start-window {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .create-main-window {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .capture-frame, .day .success-frame {
@@ -1086,10 +1051,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1110,10 +1073,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1126,10 +1087,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1142,10 +1101,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   color: #110038;
 }
@@ -1155,10 +1112,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1173,10 +1128,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   background-color: #B4B4B4;
 }
@@ -1199,7 +1152,7 @@ nav {
 }
 
 .night .logo {
-  background: url(/gifOs/assets/gifos_logo_dark.png) no-repeat center;
+  background: url(/assets/gifos_logo_dark.png) no-repeat center;
 }
 
 .night .menu {
@@ -1211,10 +1164,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1227,10 +1178,8 @@ nav {
 .night .cancel {
   color: #110038;
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -1px -1px 0 0 #110038,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #110038,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #110038, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #110038, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .night .cancel:hover {
@@ -1257,10 +1206,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
   border-width: 1px 1px 1px 0;
 }
@@ -1272,10 +1219,8 @@ nav {
 
 .night .dropdown-content {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .dropdown-content .selector {
@@ -1283,10 +1228,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1294,10 +1237,8 @@ nav {
   background-color: #2E32FB;
   border-style: solid;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1309,10 +1250,8 @@ nav {
   background-color: #2E32FB;
   border-style: solid;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1346,10 +1285,8 @@ nav {
 
 .night .search-bar {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .search-bar-form input {
@@ -1357,10 +1294,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1375,13 +1310,43 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   color: #B4B4B4;
   background-color: #E6E6E6;
+}
+
+.night .search-btn-listener {
+  color: #FFFFFF;
+  background-color: #EE3EFE;
+  border-style: solid;
+  border-color: #110038;
+  border-width: 1px;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.night .search-btn-listener img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.night .search-btn-active {
+  color: #FFFFFF;
+  background-color: #EE3EFE;
+  border-style: solid;
+  border-color: #110038;
+  border-width: 1px;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+}
+
+.night .search-btn-active img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .night .section-header {
@@ -1389,18 +1354,14 @@ nav {
   border-style: solid;
   border-color: #2E32FB;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #110038;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #110038;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
 }
 
 .night .search-bar-suggestions {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .suggestions-btn {
@@ -1408,10 +1369,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1420,10 +1379,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -1431,10 +1388,8 @@ nav {
 
 .night .suggestions-gif {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .gif-header {
@@ -1448,10 +1403,8 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1463,10 +1416,8 @@ nav {
 
 .night .gif-frame:hover {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
   outline-offset: -4px;
 }
@@ -1497,27 +1448,21 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
 .night .create-start-window {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .create-main-window {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .capture-frame, .night .success-frame {
@@ -1525,10 +1470,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1549,10 +1492,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1570,10 +1511,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1586,10 +1525,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   color: #110038;
 }
@@ -1599,10 +1536,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1617,10 +1552,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   background-color: #B4B4B4;
 }

@@ -231,6 +231,30 @@ $gradient-night: linear-gradient(225deg, #EE3EFE 0%, #2E32FB 100%);
     color: #110038;
 }
 
+@mixin night-window-btn-listener {
+    color: #FFFFFF;
+    background-color: #EE3EFE;
+    border-style: solid;
+    border-color:#110038;
+    border-width: 1px;
+    box-shadow: 
+    inset -1px -1px 0 0 #A72CB3,
+    inset 1px 1px 0 0 #FFFFFF;
+}
+
+@mixin night-window-btn-active {
+    color: #FFFFFF;
+    background-color: #EE3EFE;
+    border-style: solid;
+    border-color:#110038;
+    border-width: 1px;
+    box-shadow: 
+    inset -1px -1px 0 0 #A72CB3,
+    inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+
 @mixin night-theme-btn-active {
     background-color: #2E32FB;
     border-style: solid;

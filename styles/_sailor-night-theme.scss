@@ -111,6 +111,21 @@
         background-color: #E6E6E6;
     }
 
+    .search-btn-listener {
+        @include night-window-btn-listener;
+        img {
+            filter: invert(100%);
+        }
+    }
+
+    .search-btn-active {
+        @include night-window-btn-active;
+        img {
+            filter: invert(100%);
+        }
+    }
+
+
     .section-header {
         @include night-section-header;
     }

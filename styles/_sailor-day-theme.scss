@@ -103,6 +103,9 @@
 
     .search-btn-listener {
         @include day-window-btn-listener;
+        img {
+            filter: invert(0);
+        }
     }
 
     .search-btn-active {
