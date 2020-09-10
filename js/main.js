@@ -220,7 +220,7 @@ async function searchGifs() {
           searchDropdown.classList.add("hidden");
           submitButton.classList.add("search-btn-active");
         
-          sectionPlaceholder.value = searchTerm;
+          sectionPlaceholder.innerText = searchTerm;
         }
 
 } catch (error) {
