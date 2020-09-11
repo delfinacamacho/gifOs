@@ -425,14 +425,19 @@ font-size: 14px;
     }
 }
 
+#recorded-gif {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .split-icon-recording {
     display: inline-block; 
     height: 36px;
     width: 36px;
     padding: 8px;
     cursor: pointer;
-    background: url(./assets/recording.svg) no-repeat center;
-    background-size: 18px 18px;
 }
 
 .split-icon-camera {
@@ -441,8 +446,6 @@ font-size: 14px;
     width: 36px;
     padding: 8px;
     cursor: pointer;
-    background: url(./assets/camera.svg) no-repeat center;
-    background-size: 18px 18px;
 }
 
 .btn-menu-large {
@@ -574,4 +577,9 @@ font-size: 14px;
     width: 256px;
     cursor: pointer;
     margin-top: 16px;
+}
+
+.uploading-icon {
+    height: 48px;
+    margin-bottom: 8px;
 }
