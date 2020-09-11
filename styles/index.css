@@ -773,7 +773,7 @@ nav {
 }
 
 .day .logo {
-  background: url(/assets/gifos_logo.png) no-repeat center;
+  background: url(assets/gifos_logo.png) no-repeat center;
 }
 
 .day .menu {
@@ -1215,7 +1215,7 @@ nav {
 }
 
 .night .logo {
-  background: url(/assets/gifos_logo_dark.png) no-repeat center;
+  background: url(assets/gifos_logo_dark.png) no-repeat center;
 }
 
 .night .menu {
