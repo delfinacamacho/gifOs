@@ -214,7 +214,7 @@ font-size: 14px;
     display: inline-block;
     width: 16px;
     height: 14px;
-    background: url(/gifOs/assets/button_close.svg) no-repeat center;
+    background: url(assets/button_close.svg) no-repeat center;
     margin-right: 4px;
 }
 
@@ -463,6 +463,11 @@ font-size: 14px;
     margin-left: auto;
 }
 
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .timer {
     height: 36px;
     width: 124px;
@@ -487,7 +492,7 @@ font-size: 14px;
     width: 22px;
     cursor: pointer;
     margin-right: 4px;
-    background: url(./assets/forward.svg) no-repeat center;
+    background: url(assets/forward.svg) no-repeat center;
     background-size: 10px 10px;
 }
 
@@ -551,10 +556,11 @@ font-size: 14px;
     width: 365px;
     height: 191px;
     
-    video {
+    img {
         padding: 2px;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }  
 }
 

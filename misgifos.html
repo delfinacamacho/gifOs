@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+
+    <!--Google fonts library-->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>GifOs</title>
+    <link rel="icon" href="assets/gifos_logo.png" type="image/icon">
+</head>
+
+<body id="theme" class="day">
+    
+    <header class="header">
+        <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h1>
+    </header>
+
+    <nav class="container">
+        <div class="nav-bar">
+            <div onclick="location.href='index.html'" class="logo"></div>
+
+            <div class="menu">
+                <button onclick="location.href='upload.html'" class="btn-menu">Crear Guifos</button>
+                
+                <div class="theme-hover">
+                    <button class="btn-menu" onclick="showThemeDropdown()">Elegir tema</button><!-- 
+                 --><div id="btn-dropdown" class="btn-dropdown">
+                        <img class="dropdown-icon" src="assets/dropdown.svg" alt=""> 
+                        <ul id="themeDropdown" class="dropdown-content display-none">
+                            <li id="day-theme-btn" class="btn-dropdown-active-theme"><span class="underline">S</span>ailor Day</li>
+                            <li id="night-theme-btn" class="selector"><span class="underline">S</span>ailor Night</li>       
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="my-gifos-active" href=""><span class="underline">M</span>is Gifos</div>
+            </div>   
+        </div>
+ 
+    </nav>
+
+    <main class="container">
+
+        <section class="my-gifos-section">
+    
+            <h2 class="section-header">Mis guifos</h2>
+    
+            <div id="my-gifos-container" class="my-gifos-container">
+                        
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/theme-selector.js"></script>
+    <script src="js/mygifos.js"></script>
+
+
+</body>
+</html>
