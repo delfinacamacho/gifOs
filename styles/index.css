@@ -5,8 +5,6 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -323,7 +321,7 @@ nav {
   display: inline-block;
   width: 16px;
   height: 14px;
-  background: url(assets/button_close.svg) no-repeat center;
+  background: url(/gifOs/assets/button_close.svg) no-repeat center;
   margin-right: 4px;
 }
 
@@ -643,7 +641,7 @@ nav {
   width: 22px;
   cursor: pointer;
   margin-right: 4px;
-  background: url(assets/forward.svg) no-repeat center;
+  background: url(/gifOs/assets/forward.svg) no-repeat center;
   background-size: 10px 10px;
 }
 
