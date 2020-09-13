@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
 
     <title>GifOs</title>
+    <link rel="icon" href="assets/gifos_logo.png" type="image/icon">
 </head>
 
 <body id="theme" class="day">
@@ -19,9 +20,9 @@
     </header>
 
     <nav class="container">
-        <img onclick="location.href='index.html'" class="return-arrow" src="/gifOs/assets/arrow.svg" alt="">
+        <img onclick="location.href='index.html'" class="return-arrow" src="assets/arrow.svg" alt="">
         <div class="nav-bar">
-            <div onclick="location.href='index.html';" class="logo"></div>
+            <div onclick="location.href='index.html'" class="logo"></div>
         </div>
  
     </nav>
@@ -33,7 +34,7 @@
             <div id="create-1-intro" class="create-start-window">
                 <h2 class="window-header">Crear Gifos</h2>
                 <div class="create-intro-container">
-                        <img alt="" src="/gifOs/assets/window_img.png"/>
+                        <img alt="" src="assets/window_img.png"/>
                         <div>
                             <h3>Aquí podrás crear tus propios guifos</h3>
                             <p>Crear tu <strong><em>guifo</em></strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
@@ -52,9 +53,9 @@
                 </div>                
             </div>
 
-            <div id="create-2-recording" class="create-main-window">
+            <div id="create-2-recording" class="create-main-window display-none">
                 <div class="gif-header">
-                    <h2 id="create-2-header">placeholder</h2>
+                    <h2 id="create-2-header">Capturando tu gifo</h2>
                     <span class="close-btn"></span>
                 </div>
                
@@ -62,142 +63,9 @@
                     <div  class="capture-frame">
                         <video id="video-stream" autoplay playsinline>Browser not supported</video> 
                         <img src="" alt="Gif grabado" id="recorded-gif" class="display-none">
-                    </div>
-
-                    <div class="create-recording-nav">
-                        <div class="timer hidden">00:00:00:00</div>
-                        <div class="loading-bar hidden" id="loading-bar">
-                            <button class="play-icon"></button>
-                            <div class="loading-bar-animation" id="loading-bar-animation">
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                            </div>
-                        </div>
-                    
-                        <div id="capture-split-btn" class="split-btn margin-left-auto">
-                            <button class="split-icon-camera capture"><img src="/gifOs/assets/camera.svg"></button>
-                            <button class="btn-menu-large capture">Capturar</button>
-                        </div>
-
-                        <div id="ready-btn" class="split-btn margin-left-auto display-none">
-                            <button class="split-icon-recording ready"><img src="/gifOs/assets/recording.svg"></button>
-                            <button class="btn-menu-large ready">Listo</button>
-                        </div>
-
-                        <div id="upload-redo-btn" class="margin-left-auto display-none">
-                            <button id="redo-btn" class="btn-menu-large cancel margin-left-16">Repetir captura</button>
-                            <button id="upload-btn" class="btn-menu-large margin-left-16">Subir gifo</button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-            <div id="create-3-recording" class="create-main-window">
-                <div class="gif-header">
-                    <h2>Capturando tu gifo</h2>
-                    <span class="close-btn"></span>
-                </div>
-               
-                <div class="capture-container">
-                    <div  class="capture-frame">
-                        <!--<video autoplay playsinline src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"> 
-                                 Browser not supported 
-                        </video>-->
-                        <video id="video-recording" autoplay playsinline>Browser not supported</video> 
-                    </div>
-                
-                    <div class="create-recording-nav">
-                        <div class="timer">
-                            00:00:00:00
-                        </div>
-                        <div class="split-btn margin-left-auto">
-                            <button class="split-icon-recording ready"><img src="/gifOs/assets/recording.svg"></button>
-                            <button class="btn-menu-large ready">Listo</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="create-4-preview" class="create-main-window">
-                <div class="gif-header">
-                    <h2>Vista previa</h2>
-                    <span class="close-btn"></span>
-                </div>
-               
-                <div class="capture-container">
-                    <div  class="capture-frame">
-                        <video controls src= 
-                        "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"> 
-                                 Browser not supported 
-                        </video> 
-                    </div>
-
-                    <div class="create-recording-nav">
-                        <div class="timer">00:00:00:00</div>
-                        <div class="loading-bar" id="loading-bar">
-                            <button class="play-icon"></button>
-                            <div class="loading-bar-animation" id="loading-bar-animation">
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                            </div>
-                        </div>
-
-                        <div class="margin-left-auto">
-                            <button class="btn-menu-large cancel margin-left-16">Repetir captura</button>
-                            <button class="btn-menu-large margin-left-16">Subir gifo</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="create-5-uploading" class="create-main-window">
-                <div class="gif-header">
-                    <h2>Subiendo tu gifo</h2>
-                    <span class="close-btn"></span>
-                </div>
-               
-                <div class="capture-container">
-                    <div class="capture-frame">
-                        <div class="uploading-message flex-column-center">
-                            <img src="/gifOs/assets/globe_img.png" alt="" class="uploading-icon">
+                        
+                        <div id="uploading-screen" class="uploading-message flex-column-center display-none">
+                            <img src="assets/globe_img.png" alt="" class="uploading-icon">
                             <h3>Estamos subiendo tu gifo</h3>
                             <div class="loading-bar" id="loading-bar">
                                 <div class="loading-bar-animation-large" id="">
@@ -228,34 +96,73 @@
                         </div>
                     </div>
 
-                    <div class="margin-left-auto">
+
+
+                    <div id="create-recording-nav" class="create-recording-nav">
+                        <div class="timer">00:00:00:00</div>
+                        <div class="loading-bar display-none" id="loading-bar">
+                            <button class="play-icon"></button>
+                            <div class="loading-bar-animation" id="loading-bar-animation">
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                                <span class="progress-full"></span>
+                            </div>
+                        </div>
+                    
+                        <div id="capture-split-btn" class="split-btn margin-left-auto">
+                            <button class="split-icon-camera capture"><img src="assets/camera.svg"></button>
+                            <button class="btn-menu-large capture">Capturar</button>
+                        </div>
+
+                        <div id="ready-btn" class="split-btn margin-left-auto display-none">
+                            <button class="split-icon-recording ready"><img src="assets/recording.svg"></button>
+                            <button class="btn-menu-large ready">Listo</button>
+                        </div>
+
+                        <div id="upload-redo-btn" class="margin-left-auto display-none">
+                            <button id="redo-btn" class="btn-menu-large cancel margin-left-16">Repetir captura</button>
+                            <button id="upload-btn" class="btn-menu-large margin-left-16">Subir gifo</button>
+                        </div>
+                    </div>
+
+                    <div  id="cancel-btn" class="flex-end  display-none">                       
                         <button class="btn-menu-large cancel">Cancelar</button>
                     </div>
+                    
                 </div>
             </div>
 
-            <div id="create-6-success" class="create-start-window">
+            <div id="create-3-success" class="create-start-window display-none">
                 <h2 class="window-header">Guifo subido con éxito</h2>
                 <div class="create-success-container">
                     <div class="success-frame">
-                        <video controls src= 
-                        "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"> 
-                                 Browser not supported 
-                        </video> 
+                        <img src="" alt="Gif grabado" id="recorded-gif-thumb">
                     </div>
 
                     <div class="create-success-content">
                         <h3>Gif creado con éxito</h3>
-                        <button class="btn-menu-extralarge cancel">Copiar enlace guifo</button>
-                        <button class="btn-menu-extralarge cancel">Descargar guifo</button>
+                        <button id="copy-gif-link" class="btn-menu-extralarge cancel">Copiar enlace guifo</button>
+                        <button id="download-gif" class="btn-menu-extralarge cancel">Descargar guifo</button>
                     </div>
                 </div>
                     <div class="create-intro-nav">
-                        <button class="btn-menu-large" id="create-gif-continue">Listo</button>
+                        <button onclick="location.href='misgifos.html'" class="btn-menu-large" id="create-gif-continue">Listo</button>
                     </div>                
                 </div>
-
-
 
         </section>
 
@@ -263,6 +170,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
     <script src="js/create-gifos.js"></script>
-    <!--<script src="js/main.js"></script>-->
+    
 </body>
 </html>

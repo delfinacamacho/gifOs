@@ -323,7 +323,7 @@ nav {
   display: inline-block;
   width: 16px;
   height: 14px;
-  background: url(/gifOs/assets/button_close.svg) no-repeat center;
+  background: url(assets/button_close.svg) no-repeat center;
   margin-right: 4px;
 }
 
@@ -606,6 +606,15 @@ nav {
   margin-left: auto;
 }
 
+.flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .timer {
   height: 36px;
   width: 124px;
@@ -634,7 +643,7 @@ nav {
   width: 22px;
   cursor: pointer;
   margin-right: 4px;
-  background: url(/gifOs/assets/forward.svg) no-repeat center;
+  background: url(assets/forward.svg) no-repeat center;
   background-size: 10px 10px;
 }
 
@@ -719,10 +728,12 @@ nav {
   height: 191px;
 }
 
-.success-frame video {
+.success-frame img {
   padding: 2px;
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .create-success-content {
@@ -773,7 +784,7 @@ nav {
 }
 
 .day .logo {
-  background: url(/gifOs/assets/gifos_logo.png) no-repeat center;
+  background: url(assets/gifos_logo.png) no-repeat center;
 }
 
 .day .menu {
@@ -785,10 +796,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -826,20 +835,16 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   border-width: 1px 1px 1px 0;
 }
 
 .day .dropdown-content {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .dropdown-content .selector {
@@ -847,10 +852,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -859,10 +862,8 @@ nav {
   border-style: solid;
   border-color: #CCA6C9;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .day .dropdown-content .selector:hover .underline {
@@ -874,10 +875,8 @@ nav {
   border-style: solid;
   border-color: #CCA6C9;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .day .btn-dropdown-active-theme .underline {
@@ -902,10 +901,8 @@ nav {
 
 .day .search-bar {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .search-bar-form input {
@@ -913,10 +910,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -931,10 +926,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   color: #B4B4B4;
   background-color: #E6E6E6;
@@ -945,10 +938,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -962,10 +953,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -976,18 +965,14 @@ nav {
   border-style: solid;
   border-color: #E6BBE2;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #80687D;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #80687D;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
 }
 
 .day .search-bar-suggestions {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .suggestions-btn {
@@ -995,10 +980,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1007,10 +990,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -1018,10 +999,8 @@ nav {
 
 .day .suggestions-gif {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .gif-header {
@@ -1035,10 +1014,8 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1050,10 +1027,8 @@ nav {
 
 .day .gif-frame:hover {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
   outline-offset: -4px;
 }
@@ -1074,27 +1049,21 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #284F99,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
 .day .create-start-window {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .create-main-window {
   background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .day .capture-frame, .day .success-frame {
@@ -1102,10 +1071,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1126,10 +1093,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1142,10 +1107,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1158,10 +1121,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   color: #110038;
 }
@@ -1171,10 +1132,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1189,10 +1148,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   background-color: #B4B4B4;
 }
@@ -1215,7 +1172,7 @@ nav {
 }
 
 .night .logo {
-  background: url(/gifOs/assets/gifos_logo_dark.png) no-repeat center;
+  background: url(assets/gifos_logo_dark.png) no-repeat center;
 }
 
 .night .menu {
@@ -1227,10 +1184,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1243,10 +1198,8 @@ nav {
 .night .cancel {
   color: #110038;
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -1px -1px 0 0 #110038,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #110038,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #110038, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #110038, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .night .cancel:hover {
@@ -1273,10 +1226,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
   border-width: 1px 1px 1px 0;
 }
@@ -1288,10 +1239,8 @@ nav {
 
 .night .dropdown-content {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .dropdown-content .selector {
@@ -1299,10 +1248,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1310,10 +1257,8 @@ nav {
   background-color: #2E32FB;
   border-style: solid;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1325,10 +1270,8 @@ nav {
   background-color: #2E32FB;
   border-style: solid;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1362,10 +1305,8 @@ nav {
 
 .night .search-bar {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .search-bar-form input {
@@ -1373,10 +1314,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1391,10 +1330,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   color: #B4B4B4;
   background-color: #E6E6E6;
@@ -1406,10 +1343,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .night .search-btn-listener img {
@@ -1423,10 +1358,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
   outline-offset: -4px;
 }
@@ -1441,18 +1374,14 @@ nav {
   border-style: solid;
   border-color: #2E32FB;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #110038;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4,
- inset 2px 2px 0 0 #110038;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
 }
 
 .night .search-bar-suggestions {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .suggestions-btn {
@@ -1460,10 +1389,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
 }
 
@@ -1472,10 +1399,8 @@ nav {
   border-style: solid;
   border-color: #808080;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
   color: #110038;
   outline: 1px dotted #110038;
   outline-offset: -4px;
@@ -1483,10 +1408,8 @@ nav {
 
 .night .suggestions-gif {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .gif-header {
@@ -1500,10 +1423,8 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1515,10 +1436,8 @@ nav {
 
 .night .gif-frame:hover {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
   outline-offset: -4px;
 }
@@ -1549,27 +1468,21 @@ nav {
   border-style: solid;
   border-color: #4C2F99;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #2124B3,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
 .night .create-start-window {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .create-main-window {
   background-color: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F,
- inset 2px 2px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .night .capture-frame, .night .success-frame {
@@ -1577,10 +1490,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
 }
 
@@ -1601,10 +1512,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1622,10 +1531,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #993A3A,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1638,10 +1545,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   color: #110038;
 }
@@ -1651,10 +1556,8 @@ nav {
   border-style: solid;
   border-color: #110038;
   border-width: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #A72CB3,
- inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1669,10 +1572,8 @@ nav {
   border-style: solid;
   border-color: #979797;
   border-width: 1px;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6,
- inset 2px 2px 0 0 #000000;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
   color: #B4B4B4;
   background-color: #B4B4B4;
 }
