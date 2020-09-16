@@ -1,4 +1,3 @@
-
 /*---------- GETTING GIFS FOR SUGGESTIONS SECTION ----------*/
 
 const apikey = "Tikochocgg7Xu1KtXHIGkPgqAlmLFJt4";
@@ -117,6 +116,7 @@ const sectionPlaceholder = document.querySelector(".search-term");
 submitButton.addEventListener("click", searchGifs);
 
 async function searchGifs() {
+  if (searchInput.value != "") {
     try {
         const resultsContainer = document.getElementById("results-container");
         resultsContainer.innerHTML = "";
@@ -175,12 +175,13 @@ async function searchGifs() {
 } catch (error) {
     console.log("failed", error);
   }
-}
+}}
 
 //Shows dropdown of search suggestions
+const searchDropdown = document.querySelector(".search-bar-suggestions");
 
 function displaySearchBarDropdown() {
-  const searchDropdown = document.querySelector(".search-bar-suggestions");
+
   if (searchInput.value === null || searchInput.value === " ") {
     searchDropdown.classList.add("hidden");
     submitButton.classList.remove("search-btn-listener");
@@ -189,6 +190,17 @@ function displaySearchBarDropdown() {
     submitButton.classList.add("search-btn-listener");
   }
 }
+
+//Disables the Searchbar's suggestions dropdown & changes Search button when the input's value is cleared
+
+searchInput.oninput = () => {
+  if (searchInput.value === "")
+  {
+    searchDropdown.classList.add("hidden");
+    submitButton.className = "";
+    submitButton.classList.add("search-btn-submit");
+  }
+};
 
 searchInput.addEventListener("input", displaySearchBarDropdown);
 
