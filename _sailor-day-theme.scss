@@ -1,0 +1,224 @@
+@import "_variables.scss";
+
+
+.day {
+
+    background-color: #FFF4FD;
+    
+    .header {
+        background-image: $gradient-day;
+        box-shadow: $outer-shadow-blue;
+    }
+
+    .logo {
+        background: url(../assets/gifos_logo.png)no-repeat center;
+    }
+
+    .menu {
+        color: #110038;
+    }
+
+    .btn-menu, .btn-menu-large, .btn-menu-extralarge {    
+        @include day-btn;
+        &:hover {
+        @include day-btn-hover;
+        }
+    }
+
+    .cancel {    
+        @include day-btn-cancel;
+        &:hover {
+        @include day-btn-cancel-hover;
+        }
+    }
+
+    .theme-hover:hover {
+        .btn-dropdown{
+            @include day-btn-hover;
+            border-width: 1px 1px 1px 0;
+        }
+        .btn-menu {
+            @include day-btn-hover;
+        }
+    }
+
+    .btn-dropdown {
+        @include day-btn;
+        border-width: 1px 1px 1px 0;
+    }
+
+    .dropdown-content {
+        @include day-window-body;
+
+        .selector {    
+            @include day-window-btn;
+            &:hover {
+                @include day-theme-btn-active;
+                .underline {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .btn-dropdown-active-theme {
+        @include day-theme-btn-active;
+        .underline {
+            text-decoration: underline;
+        }
+    }
+
+    .my-gifos {
+        color: #110038;
+        &:hover {
+            outline: 1px dotted #110038;
+        }
+    }
+
+    .my-gifos-active {
+        color: #8F8F8F;
+    }
+    
+    .underline {
+        text-decoration: underline;
+    }
+
+    .search-bar {
+        @include day-window-body;
+    }
+
+    .search-bar-form input {
+        @include input-style;
+    }
+
+    .window-header {
+    @include day-window-header;
+    }
+
+    .search-btn-submit {
+        @include day-window-btn;
+        color: #B4B4B4;
+        background-color: #E6E6E6;
+    }
+
+    .search-btn-listener {
+        @include day-window-btn-listener;
+        img {
+            filter: invert(0);
+        }
+    }
+
+    .search-btn-active {
+        @include day-window-btn-active;
+    }
+
+    .section-header {
+        @include day-section-header;
+    }
+
+    .search-bar-suggestions {
+        @include day-window-body;
+    }
+
+    .suggestions-btn {
+        @include day-window-btn;
+        &:hover {
+            @include day-window-btn-hover;
+        }
+    }
+
+    .suggestions-gif {
+        @include day-window-body;
+    }
+
+    .gif-header {
+        @include day-window-header;
+    }
+
+    .gif-btn-more {
+        @include day-more-btn;
+        &:hover {
+            @include day-more-btn-hover;
+        }
+    }
+
+    .gif-frame:hover{
+        @include day-window-body;
+        outline: 1px dotted #110038;
+        outline-offset: -4px;
+    }
+
+    .gif-footer {
+        @include day-window-header;
+    }
+
+    .suggestions-content:hover {
+        outline: 1px dotted #110038;
+        outline-offset: -1px;
+    }
+
+    .results-examples-btn {
+        @include day-more-btn;
+    }
+
+    .create-start-window {
+        @include day-window-body;
+    }
+    
+    .create-main-window {
+        @include day-window-body;
+    }
+
+    .capture-frame, .success-frame {
+        @include input-style;
+    }
+
+    .split-btn:hover {
+        .capture {
+            @include day-btn-hover;    
+        }
+        .ready {
+            @include recording-ready-hover;
+        }
+    }
+
+    .capture {
+        @include day-btn; 
+        &:first-child {
+            border-width: 1px 0 1px 1px;
+        }
+    }
+
+    .ready {
+        @include recording-ready;
+        &:first-child {
+            border-width: 1px 0 1px 1px;
+        }
+    }
+
+    .timer {
+        @include input-style;
+        color: #110038;
+    }
+
+    .play-icon {
+        @include day-btn;
+        &:hover {
+            @include day-btn-hover;
+        }
+    }
+
+    .loading-bar-animation,  .loading-bar-animation-large {
+        @include input-style;
+        background-color: #B4B4B4;
+    }
+
+    .grey {
+        background-color: #999999;
+    }
+
+    .pink {
+        background-color: #F7C9F3
+    }
+
+}

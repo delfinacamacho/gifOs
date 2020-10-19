@@ -49,7 +49,7 @@
                 </div>
                 <div class="create-intro-nav">
                     <button class="btn-menu-large cancel margin-left-16" id="create-gif-cancel">Cancelar</button>
-                    <button id="create-start-btn" class="btn-menu-large margin-left-16" id="create-gif-continue">Comenzar</button>
+                    <button id="create-start-btn" class="btn-menu-large margin-left-16">Comenzar</button>
                 </div>                
             </div>
 
@@ -62,13 +62,13 @@
                 <div class="capture-container">
                     <div  class="capture-frame">
                         <video id="video-stream" autoplay playsinline>Browser not supported</video> 
-                        <img src="" alt="Gif grabado" id="recorded-gif" class="display-none">
+                        <img src="https://media.giphy.com/media/Lny6Rw04nsOOc/giphy.gif" alt="Gif grabado" id="recorded-gif" class="display-none">
                         
                         <div id="uploading-screen" class="uploading-message flex-column-center display-none">
                             <img src="assets/globe_img.png" alt="" class="uploading-icon">
                             <h3>Estamos subiendo tu gifo</h3>
-                            <div class="loading-bar" id="loading-bar">
-                                <div class="loading-bar-animation-large" id="">
+                            <div class="loading-bar" id="loading-bar-large">
+                                <div class="loading-bar-animation-large">
                                     <span class="progress-full"></span>
                                     <span class="progress-full"></span>
                                     <span class="progress-full"></span>
@@ -99,37 +99,37 @@
 
 
                     <div id="create-recording-nav" class="create-recording-nav">
-                        <div class="timer">00:00:00:00</div>
+                        <div class="timer" id="timer">00:00:000</div>
                         <div class="loading-bar display-none" id="loading-bar">
-                            <button class="play-icon"></button>
-                            <div class="loading-bar-animation" id="loading-bar-animation">
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
-                                <span class="progress-full"></span>
+                            <button onclick="progress()" class="play-icon" id="play-progress"></button>
+                            <div class="loading-bar-animation" id="pb-container">
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
+                              <span class="progress-full grey"></span>
                             </div>
-                        </div>
+                          </div>
                     
                         <div id="capture-split-btn" class="split-btn margin-left-auto">
-                            <button class="split-icon-camera capture"><img src="assets/camera.svg"></button>
+                            <button class="split-icon-camera capture"><img src="assets/camera.svg" alt=""></button>
                             <button class="btn-menu-large capture">Capturar</button>
                         </div>
 
                         <div id="ready-btn" class="split-btn margin-left-auto display-none">
-                            <button class="split-icon-recording ready"><img src="assets/recording.svg"></button>
+                            <button class="split-icon-recording ready"><img  alt="" src="assets/recording.svg"></button>
                             <button class="btn-menu-large ready">Listo</button>
                         </div>
 
@@ -150,7 +150,7 @@
                 <h2 class="window-header">Guifo subido con éxito</h2>
                 <div class="create-success-container">
                     <div class="success-frame">
-                        <img src="" alt="Gif grabado" id="recorded-gif-thumb">
+                        <img src="https://media.giphy.com/media/Lny6Rw04nsOOc/giphy.gif" alt="Gif grabado" id="recorded-gif-thumb">
                     </div>
 
                     <div class="create-success-content">
@@ -160,7 +160,7 @@
                     </div>
                 </div>
                     <div class="create-intro-nav">
-                        <button onclick="location.href='misgifos.html'" class="btn-menu-large" id="create-gif-continue">Listo</button>
+                        <button onclick="location.href='misgifos.html'" class="btn-menu-large">Listo</button>
                     </div>                
                 </div>
 
@@ -168,7 +168,7 @@
 
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
     <script src="js/create-gifos.js"></script>
     
 </body>
